@@ -40,9 +40,12 @@ var musicRender = (function () {
 
     //->音乐播放
     $plan.add(function () {
-        //musicAudio.play();
+        musicAudio.play();
    		//console.dir(musicAudio);
-   		//$musicBtn.css('display','block').addClass('move');
+   		$musicBtn.css('display','block').addClass('move');
+   		document.addEventListener("WeixinJSBridgeReady", function () {//微信
+	       musicAudio.play();
+	    }, false);
 		musicAudio.addEventListener('canplay',function(){
 			//->计算播放量
             computedAlready(); 
