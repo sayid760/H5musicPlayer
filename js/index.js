@@ -41,8 +41,8 @@ var musicRender = (function () {
     //->音乐播放
     $plan.add(function () {
         musicAudio.play();
-		console.dir(musicAudio);
-		$musicBtn.css('display','block').addClass('move');
+// 		console.dir(musicAudio);
+// 		$musicBtn.css('display','block').addClass('move');
 		musicAudio.addEventListener('canplay',function(){
 			//->计算播放量
             computedAlready(); 
