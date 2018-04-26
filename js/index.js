@@ -75,8 +75,6 @@ var musicRender = (function () {
     function computedAlready() {
     	var curTime = musicAudio.currentTime,
             durTime = musicAudio.duration;
-            console.log(curTime)
-    	    console.log(durTime)
         if (curTime >= durTime) {
             clearInterval(autoTimer);
             console.log(autoTimer)
