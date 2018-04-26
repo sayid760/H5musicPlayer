@@ -146,7 +146,7 @@ body,
 .footer .progress .proBg .dragCircle {
   position: absolute;
   top: 50%;
-  left: 0.15rem;
+  left: -0.15rem;
   margin-top: -0.15rem;
   height: 0.3rem;
   width: 0.3rem;
