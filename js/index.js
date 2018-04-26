@@ -44,6 +44,7 @@ var musicRender = (function () {
    		//$musicBtn.css('display','block').addClass('move');
    		document.addEventListener("WeixinJSBridgeReady", function () {//微信
 	       musicAudio.play();
+	       $musicBtn.css('display','block').removeClass('move');
 	    }, false);
 		musicAudio.addEventListener('canplay',function(){
 			//->计算播放量
